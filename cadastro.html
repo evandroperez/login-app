@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style-cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <main class="container">
+        <div class="card">
+
+            <h1>Cadastrar</h1>
+
+            <div id="msgError"></div>
+            <div id="msgSuccess"></div>
+
+            <div class="label-float">
+                <input type="text" id="name" placeholder="" required>
+                <label id="labelName" for="name">Nome</label>
+            </div>
+            
+            <div class="label-float">
+                <input type="text" id="user" placeholder="" required>
+                <label id="labelUser" for="user">Usuario</label>
+            </div>
+
+            <div class="label-float">
+                <input type="password" id="password" placeholder="" required>
+                <label id="labelPass" for="password">Senha</label>
+                <i id="seePass" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <div class="label-float">
+                <input type="password" id="confirm" placeholder="" required>
+                <label id="labelConfirm" for="confirm">Confirme senha</label>
+                <i id="seePassConfirm" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <div class="justify-center">
+                <button onclick='cadastrar()'>Cadastrar</button>
+            </div>            
+
+        </div>
+    </main>
+    <script src="scripts-cadastro.js"></script>
+</body>
+</html>
