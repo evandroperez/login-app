@@ -1,2 +1,2 @@
 # login-app
-Tela de login com validação
+Cadastro e login com validação.
